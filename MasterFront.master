@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterFront.master.cs"
+    Inherits="MasterFront" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>User</title>
+ 
+    <style type="text/css">
+        .style1
+        {
+            width: 1063px;
+            height: 67px;
+        }
+        .style2
+        {
+            width: 368px;
+            height: 112px;
+        }
+        .style3
+        {
+            height: 112px;
+        }
+        .newStyle1
+        {
+        }
+    </style>
+   
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/user.css" rel="stylesheet" type="text/css" />
+   
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    
+    <table class="style1" style="background-image: none">
+        <tr>
+            <td class="style2">
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/logo.jpg" />
+            </td>
+            <td class="style3">
+                <asp:Image ID="Image3" runat="server" Height="116px" 
+                    ImageUrl="~/images/front.jpg" Width="1594px" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:Image ID="Image4" runat="server" Height="16px" 
+                    ImageUrl="~/images/front1 - Copy.jpg" Width="2020px" />
+            </td>
+        </tr>
+    </table>
+    
+    <table border="0" align="center" cellpadding="0" cellspacing="0" 
+        style="height: 133px; width: 1027px">
+        <tr>
+            <td align="left" valign="top">
+                <!-- InstanceBeginEditable name="EditRegion1" -->
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="left" valign="top">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                <!-- InstanceEndEditable -->
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
